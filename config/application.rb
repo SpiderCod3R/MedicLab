@@ -35,5 +35,18 @@ module MedicLab
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.sass.preferred_syntax = :sass
+    config.sass.line_comments = false
+    config.sass.cache = false
+
+
+    config.autoload_paths += %W(
+      #{config.root}/lib
+      #{config.root}/node_modules
+    )
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
+
+    config.assets.paths << Rails.root.join("vendor", "assets", "lib/assets")
   end
 end

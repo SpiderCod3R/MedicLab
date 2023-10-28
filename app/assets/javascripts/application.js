@@ -1,0 +1,13 @@
+//= require "plugins/js/vendor.bundle.base.js"
+//= require "plugins/chart.js/Chart.min.js"
+//= require "plugins/progressbar.js/progressbar.min.js"
+//= require "plugins/jvectormap/jquery-jvectormap.min.js"
+//= require "plugins/jvectormap/jquery-jvectormap-world-mill-en.js"
+//= require "plugins/owl-carousel-2/owl.carousel.min.js"
+
+//= require "js/off-canvas.js"
+//= require "js/hoverable-collapse.js"
+//= require "js/misc.js"
+//= require "js/settings.js"
+//= require "js/todolist.js"
+//= require "js/dashboard.js"

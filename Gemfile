@@ -55,3 +55,7 @@ end
 
 gem 'react_on_rails', '~> 13.4'
 gem 'shakapacker', '~> 7.0', '>= 7.0.2'
+gem 'dartsass-rails', '~> 0.5.0'
+gem 'sass-rails', '~> 6.0'
+gem 'better_errors'
+gem 'turbo-rails', '~> 1.5'
