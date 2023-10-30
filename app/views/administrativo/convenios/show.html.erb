@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @administrativo_convenio %>
+
+<div>
+  <%= link_to "Edit this convenio", edit_administrativo_convenio_path(@administrativo_convenio) %> |
+  <%= link_to "Back to convenios", administrativo_convenios_path %>
+
+  <%= button_to "Destroy this convenio", @administrativo_convenio, method: :delete %>
+</div>

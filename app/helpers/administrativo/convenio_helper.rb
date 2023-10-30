@@ -1,0 +1,2 @@
+module Administrativo::ConvenioHelper
+end

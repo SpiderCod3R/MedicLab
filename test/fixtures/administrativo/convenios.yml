@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  intercambio: false
+  nome: MyString
+  razao_social: MyString
+  email: MyString
+  cnpj: MyString
+  inscricao_estadual: MyString
+  telefone: MyString
+  cep: MyString
+  endereco: MyString
+  complemento: MyString
+  valor_km_com_medico: 9.99
+  valor_km_sem_medico: 9.99
+  taxa_retorno: 9.99
+  hora_espera: 9.99
+  valor_interhospitalar_com_medico: 9.99
+  valor_interhospitalar_sem_medico: MyString
+  codigo_adicional: 1
+  codigo_departamento: 1
+  valor_km: 9.99
+  taxa_retorno_com_medico: 9.99
+  taxa_retorno_sem_medico: 9.99
+
+two:
+  status: MyString
+  intercambio: false
+  nome: MyString
+  razao_social: MyString
+  email: MyString
+  cnpj: MyString
+  inscricao_estadual: MyString
+  telefone: MyString
+  cep: MyString
+  endereco: MyString
+  complemento: MyString
+  valor_km_com_medico: 9.99
+  valor_km_sem_medico: 9.99
+  taxa_retorno: 9.99
+  hora_espera: 9.99
+  valor_interhospitalar_com_medico: 9.99
+  valor_interhospitalar_sem_medico: MyString
+  codigo_adicional: 1
+  codigo_departamento: 1
+  valor_km: 9.99
+  taxa_retorno_com_medico: 9.99
+  taxa_retorno_sem_medico: 9.99

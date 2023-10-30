@@ -1,0 +1,2 @@
+json.extract! administrativo_convenio, :id, :status, :intercambio, :nome, :razao_social, :email, :cnpj, :inscricao_estadual, :telefone, :cep, :endereco, :complemento, :valor_km_com_medico, :valor_km_sem_medico, :taxa_retorno, :hora_espera, :valor_interhospitalar_com_medico, :valor_interhospitalar_sem_medico, :codigo_adicional, :codigo_departamento, :valor_km, :taxa_retorno_com_medico, :taxa_retorno_sem_medico, :created_at, :updated_at
+json.url administrativo_convenio_url(administrativo_convenio, format: :json)

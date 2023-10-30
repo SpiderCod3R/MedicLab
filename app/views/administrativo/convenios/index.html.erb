@@ -1,0 +1,62 @@
+<div class="page-header">
+  <h3 class="page-title"> Convênios </h3>
+  <p class="card-description"> Exibindo <code>Todos os convênios registrados.</code>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">Administrativo</li>
+      <li class="breadcrumb-item active" aria-current="page">Convênios</li>
+    </ol>
+    <%=link_to "+ Criar novo Convênio", new_administrativo_convenio_path, class: "nav-link btn btn-success create-new-button" %>
+    
+  </nav>
+</div>
+
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table table-hover table-single">
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>nome</th>
+          <th>intercambio</th>
+          <th>Telefone</th>
+          <th>CEP</th>
+          <th>Endereco</th>
+          <th>CNPJ</th>
+          <th>Email</th>
+          <th>Ver / Editar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @administrativo_convenios.each do |administrativo_convenio| %>
+          <%= render administrativo_convenio %>
+        <% end %>
+        
+        <!--<tr>
+          <td class="td-black-text">Messsy</td>
+          <td class="td-black-text">Flash</td>
+          <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
+          <td><label class="badge badge-warning">In progress</label></td>
+        </tr>
+        <tr>
+          <td class="td-black-text">John</td>
+          <td class="td-black-text">Premier</td>
+          <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
+          <td><label class="badge badge-info">Fixed</label></td>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>After effects</td>
+          <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
+          <td><label class="badge badge-success">Completed</label></td>
+        </tr>
+        <tr>
+          <td>Dave</td>
+          <td>53275535</td>
+          <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
+          <td><label class="badge badge-warning">In progress</label></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+</div>

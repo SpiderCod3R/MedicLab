@@ -59,3 +59,6 @@ gem 'dartsass-rails', '~> 0.5.0'
 gem 'sass-rails', '~> 6.0'
 gem 'better_errors'
 gem 'turbo-rails', '~> 1.5'
+
+gem 'mongoid'
+gem 'json'

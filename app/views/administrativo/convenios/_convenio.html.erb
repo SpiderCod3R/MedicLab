@@ -1,0 +1,21 @@
+<div id="<%= dom_id convenio %>">
+  <tr>
+    <td><label class="badge badge-success"><%= convenio.status %></label></td>
+    <td class="td-black-text"><%= convenio.nome %></td>
+    <td class="td-black-text"><%= convenio.intercambio %></td>
+    <td class="td-black-text"><%= convenio.telefone %></td>
+    <td class="td-black-text"><%= convenio.cep %></td>
+    <td class="td-black-text"><%= convenio.endereco %></td>
+    <td class="text-danger"> <%= convenio.cnpj %></td>
+    <td class="text-danger"> <%= convenio.email %></td>
+    <td class = "td-black-text">
+      <div class="col-3">
+          <%= link_to edit_administrativo_convenio_path(convenio) do %>
+            <div class="icon icon-box-success">
+              <span class="mdi mdi-border-color"></span>
+            </div>
+          <%end%>
+        </div>
+    </td>
+  </tr>
+</div>

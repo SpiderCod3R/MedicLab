@@ -1,0 +1,139 @@
+<%= form_with(model: administrativo_convenio) do |form| %>
+  <% if administrativo_convenio.errors.any? %>
+    <div id="error_messages">
+      <h2><%= pluralize(administrativo_convenio.errors.count, "erro") %> Impediram este convenio de ser criado:</h2>
+
+      <ul>
+        <% administrativo_convenio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status, html: { class: "form-control" } , placeholder: "Qual o Status"%>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :intercambio, style: "display: block" %>
+    <%= form.check_box :intercambio, html: { class: "form-control" } %>
+  </div>
+
+  <div class="form-group row">
+    <div class="col">
+      <%= form.label :nome, style: "display: block" %>
+      <%= form.text_field :nome, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :razao_social, style: "display: block" %>
+      <%= form.text_field :razao_social, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :email, style: "display: block" %>
+      <%= form.text_field :email, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :cnpj, style: "display: block" %>
+      <%= form.text_field :cnpj, html: { class: "form-control" } %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+     <div class="col">
+      <%= form.label :inscricao_estadual, style: "display: block" %>
+      <%= form.text_field :inscricao_estadual, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :telefone, style: "display: block" %>
+      <%= form.text_field :telefone, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :cep, style: "display: block" %>
+      <%= form.text_field :cep, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :endereco, style: "display: block" %>
+      <%= form.text_field :endereco, html: { class: "form-control" } %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col">
+      <%= form.label :complemento, style: "display: block" %>
+      <%= form.text_field :complemento, html: { class: "form-control" } %>
+    </div>
+  
+    <div class="col">
+      <%= form.label :valor_km_com_medico, style: "display: block" %>
+      <%= form.text_field :valor_km_com_medico, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :valor_km_sem_medico, style: "display: block" %>
+      <%= form.text_field :valor_km_sem_medico, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :taxa_retorno, style: "display: block" %>
+      <%= form.text_field :taxa_retorno, html: { class: "form-control" } %>
+    </div>
+  </div>  
+
+  <div class="form-group row">
+    <div class="col">
+      <%= form.label :hora_espera, style: "display: block" %>
+      <%= form.text_field :hora_espera, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :valor_interhospitalar_com_medico, style: "display: block" %>
+      <%= form.text_field :valor_interhospitalar_com_medico, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :valor_interhospitalar_sem_medico, style: "display: block" %>
+      <%= form.text_field :valor_interhospitalar_sem_medico, html: { class: "form-control" } %>
+    </div>
+  
+    <div class="col">
+      <%= form.label :codigo_adicional, style: "display: block" %>
+      <%= form.number_field :codigo_adicional, html: { class: "form-control" } %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col">
+      <%= form.label :codigo_departamento, style: "display: block" %>
+      <%= form.number_field :codigo_departamento, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :valor_km, style: "display: block" %>
+      <%= form.text_field :valor_km , html: { class: "form-control" }%>
+    </div>
+  
+    <div class="col">
+      <%= form.label :taxa_retorno_com_medico, style: "display: block" %>
+      <%= form.text_field :taxa_retorno_com_medico, html: { class: "form-control" } %>
+    </div>
+
+    <div class="col">
+      <%= form.label :taxa_retorno_sem_medico, style: "display: block" %>
+      <%= form.text_field :taxa_retorno_sem_medico, html: { class: "form-control" } %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= button_tag( class: "btn btn-primary mr-2") do %>
+      Enviar
+    <% end %>
+    <button class="btn btn-dark">Cancel</button>
+  </div>
+<% end %>
